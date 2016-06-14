@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bengaluru Sports Club</title>
+    <!--website Title & Description for Search Engine Purpose-->
+    <title>Bengaluru Sports Club</title>
+    <meta content="" name="description"><!--Mobile viewport optimized-->
+    <meta content=
+    "width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    name="viewport"><!--Bootstrap css-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!--Custome CSS-->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!--Include Modernizr in the head,before any other javascript-->
+
+    <script src="includes/js/modernizr-2.6.2.min.js">
+    </script>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="clearfix"></div>
+        <!--Header====================================-->
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                 <button class="navbar-toggle" data-target=
+                ".navbar-responsive-collapse" data-toggle="collapse" type=
+                "button"><span class="icon-bar"></span> <span class=
+                "icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="/"><img alt=" Logo"
+                src="images/logo.jpg"></a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Service</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"
+                            href="#">Branches<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">KR Puram</a>
+                                </li>
+                                <li>
+                                    <a href="#">GB Palaya</a>
+                                </li>
+                                <li>
+                                    <a href="#">EC Road</a>
+                                </li>
+                                <li class="divider">City</li>
+                                <li class="dropdown-header"></li>
+                                <li>
+                                    <a href="#">Mumbai</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kochi</a>
+                                </li>
+                            </ul><!--end of drop down menu-->
+                        </li>
+                        <li><form class="navbar-form pull-left">
+                          <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </form></li>
+                        <li>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle=
+                                    "dropdown" href="#"><span class=
+                                    "glyphicon glyphicon-user"></span> My
+                                    Account <strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><span class=
+                                            "glyphicon glyphicon-wrench"></span>
+                                            Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class=
+                                            "glyphicon glyphicon-refresh"></span>
+                                            Update Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class=
+                                            "glyphicon glyphicon-briefcase"></span>
+                                            Billing</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#"><span class=
+                                            "glyphicon glyphicon-off"></span>
+                                            Sign out</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul><!-- end nav pull-right -->
+                        </li>
+                    </ul><!--end of nav nav-bar ul-->
+                </div><!--end of navbar-collapse-->
+            </div><!--end of container-->
+        </div><!-- end of navbar top-->
+        <!---Header End================-->
+
+        <div class="carousel slide" id="myCarousel">
+            <!-- Indicators:The indicators are the little dots at the bottom of each slide (which indicates how many slides there is in the carousel,
+   and which slide the user are currently viewing).
+
+ The indicators are specified in an ordered list with class .carousel-indicators.
+The data-target attribute points to the id of the carousel.
+The data-slide-to attribute specifies which slide to go to, when clicking on the specific dot -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel">
+                </li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol><!-- Wrapper for slides
+  The "Wrapper for slides" part:
+    The slides are specified in a <div> with class .carousel-inner.
+  The content of each slide is defined in a <div> with class .item. This can be text or images.
+  The .active class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
+-->
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <div class="carousel-caption">
+                        <h4>Football</h4>
+                        <p>Football is a family of team sports that involve, to
+                        varying degrees, kicking a ball to score a goal</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+                <div class="item" id="slide2">
+                    <div class="carousel-caption">
+                        <h4>Cycling</h4>
+                        <p>Cycling, also called bicycling or biking, is
+                          the use of bicycles for transport, recreation, exercise or sport.</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+                <div class="item" id="slide3">
+                    <div class="carousel-caption">
+                        <h3>Swimming</h3>
+                        <p>Swimming is an individual or team sport and activity.
+                          Competitive swimming is one of the most popular Olympic sports.</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+            </div><!-- carousel-inner -->
+            <!-- Controls
+  This code adds "left" and "right" buttons that allows the user to go back and forth between the slides manually.
+  The data-slide attribute accepts the keywords "prev" or "next", which alters the slide position relative to its current position.
+-->
+            <a class="left carousel-control" data-slide="prev" href=
+            "#myCarousel"><span class="icon-prev"></span></a> <a class=
+            "right carousel-control" data-slide="next" href=
+            "#myCarousel"><span class="icon-next"></span></a>
+        </div><!-- end myCarousel -->
+        <!--===========================Carousel end==============-->
+        <!--==features Heading (description about website) started==-->
+        <div class="row" id="featuresHeading">
+            <div class="col-12">
+                <h2>Sports In BSC</h2>
+                <p class="lead">Bangalore sports Club provides the traning for
+                cricket, football,tennis ,running ,swimming and many other
+                sports.</p>
+            </div><!-- end col-12 -->
+        </div><!-- end featuresHeading -->
+        <!--visible only on small devices-->
+        <div class="well well-small visible-sm">
+            <a class="btn btn-large btn-block btn-default" href=""><span class=
+            "glyphicon glyphicon-phone"></span>Give us a call</a>
+        </div><!--end of welll small-->
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Cricket</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="cricket" class="img-circle" src=
+                    "images/cricket_feat.jpg">
+                    <p>A cricket match is divided into periods called innings
+                    (which ends with "s" in both singular and plural form). It
+                    is decided before the match whether the teams will have one
+                    innings or two innings each..</p><a class=
+                    "btn btn-warning btn-block" href=
+                    "https://en.wikipedia.org/wiki/Cricket" target=
+                    "_blank">Learn About Cricket</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Football</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="football" class="img-circle" src=
+                    "images/Football_feat.jpg">
+                    <p>Several of the football codes are the most popular team
+                    sports in the world.Globally, association football is
+                    played by over 250 million players in over 200 nations and
+                    has the highest television audience.</p><a class=
+                    "btn btn-danger btn-block" href=
+                    "https://en.wikipedia.org/wiki/Football" target=
+                    "_blank">More About Football</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Running</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="running" class="img-circle" src=
+                    "images/running_feat.jpg">
+                    <p>Running gait can be divided into two phases in regard to
+                    the lower extremity: stance and swing. These can be further
+                    divided into absorption, propulsion, initial swing and
+                    terminal swing.</p><a class="btn btn-info btn-block" href=
+                    "https://en.wikipedia.org/wiki/Running" target=
+                    "_blank">More About Running</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+        </div><!-- end features -->
+        <!---end of features==-->
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Cycling</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="cricket" class="img-circle" src=
+                    "images/Cycling_feat.jpg">
+                    <p>Cycling, also called bicycling or biking, is the use of bicycles
+                      for transport, recreation, exercise or sport.
+                      Persons engaged in cycling are referred to as "cyclists", "bikers".</p><a class=
+                    "btn btn-warning btn-block" href=
+                    "https://en.wikipedia.org/wiki/Cycling" target=
+                    "_blank">Learn About Cricket</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Swimming</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="football" class="img-circle" src=
+                    "images/swim_feat.jpg">
+                    <p>Swimming is an individual or team sport and activity. Competitive swimming
+                      is one of the most popular Olympic sports,
+                       with events in freestyle, backstroke, breaststroke, and butterfly.
+                        In addition.</p><a class=
+                    "btn btn-danger btn-block" href=
+                    "https://en.wikipedia.org/wiki/Swimming_(sport)" target=
+                    "_blank">More About Football</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tennis</h3>
+                    </div><!-- end panel-heading -->
+                    <img alt="running" class="img-circle" src=
+                    "images/tenish_feat.jpg">
+                    <p>Tennis is a racket sport that can be played individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with
+                       .</p><a class="btn btn-info btn-block" href=
+                    "https://en.wikipedia.org/wiki/Tennis" target=
+                    "_blank">More About Running</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+        </div><!-- end features -->
+        <!--=========tab section start here==========-->
+        <div class="row" id="moreInfo">
+            <div class="col-sm-6">
+                <h3>Bangalore Sports Club</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab1">Sports</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab2">Membership</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab3">Branches</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab4">Games</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab5">Arena</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4><span class=
+                            "glyphicon glyphicon-map-marker"></span> Sports
+                            &nbsp;<small>Essential For Each
+                            Individuals</small></h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.6600720839!2d77.35073277552621!3d12.954517012545413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka+560001!5e0!3m2!1sen!2sin!4v1465823098973" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <p>Sport is generally recognised as activities
+                            which are based in physical athleticism or physical
+                            dexterity, with the largest major competitions such
+                            as the Olympic Games admitting only sports meeting
+                            this definition,and other organisations such as the
+                            Council of Europe using definitions precluding
+                            activities without a physical element from
+                            classification as sports.However, a number of
+                            competitive, but non-physical, activities claim
+                            recognition as mind sports.</p>
+                            <p>The International Olympic Committee (through
+                            ARISF) recognises both chess and bridge as bona
+                            fide sports, and SportAccord, the international
+                            sports federation association, recognises five
+                            non-physical sports: Bridge, Chess, Draughts, Go,
+                            Xiangqi,and limits the number of mind games which
+                            can be admitted as sports. Sports are usually
+                            governed by a set of rules or customs, which serve
+                            to ensure fair competition, and allow consistent
+                            adjudication of the winner. Winning can be
+                            determined by physical events such as scoring goals
+                            or crossing a line first. It can also be determined
+                            by judges who are scoring elements of the sporting
+                            performance, including objective or subjective
+                            measures such as technical performance or artistic
+                            impression.</p>
+                        </div><!-- end tab-pane -->
+                        <div class="tab-pane" id="tab2">
+                            <h4>Club Participation</h4><img alt=
+                            "Placeholder image" class="thumbnail pull-left"
+                            src="images/cricket.jpg">
+                            <p>The concept of ensuring your club is inclusive
+                              and accessible is a complex topic. For a club to
+                               maintain its long term sustainability and grow
+                               its membership, it is very important for a club’s
+                                membership and activities to reflect the needs of
+                                 its surrounding community.
+                                 Often when the concepts of inclusion and
+                                 accessibility are raised thoughts turn to minority
+                                 groups such as the Culturally and Linguistically Diverse
+                                  (CALD) communities and disabled participants but clubs
+                                  should consider a much broader definition when considering
+                                   inclusion and accessibility.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.</p>
+                            <hr>
+                            <a class="btn btn-warning" data-toggle="modal"
+                            href="#myModal" role="button"><span class=
+                            "glyphicon glyphicon-hand-up"></span>Join Club!</a>
+                        </div><!-- end tab-pane -->
+                        <div class="tab-pane" id="tab2">
+                          <h4></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.</p>
+                            <hr>
+                            <a class="btn btn-warning" data-toggle="modal"
+                            href="#myModal" role="button"><span class=
+                            "glyphicon glyphicon-hand-up"></span> Click for a
+                            Modal Window!</a>
+                        </div><!-- end tab-pane -->
+                    </div><!-- end tab-content -->
+                </div><!-- end tabbable -->
+            </div><!--div col-6-->
+            <div class="col-sm-6">
+                <h3>Vision And Mission</h3>
+                <p>We transform the quality of life of the community by
+                providing a well established place to relax, play, compete,
+                learn and flourish.</p>
+                <h4>values</h4>
+                <div class="list-group">
+                    <a class="list-group-item" href="#">
+                    <h4 class="list-group-item-heading">Trust</h4>
+                    <p class="list-group-item-text">Trust is at the core of our
+                    program including building trust with our sponsors, our
+                    donors and with the children so that they know they can
+                    rely on the program and that the program respects and
+                    values each child</p></a>
+                </div><!--end of list group"-->
+                <div class="list-group">
+                    <a class="list-group-item" href="#">
+                    <h4 class="list-group-item-heading">Consistency:</h4>
+                    <p class="list-group-item-text">In the township world there
+                    is so little consistency, we try to create a buffer for the
+                    children to not experience the up’s and downs of a
+                    Not-for-Profit organisation and only promise what we can
+                    honour building trust with the children where they can come
+                    to rely on services and facilities being available to
+                    them</p></a>
+                </div><!--end of list group"-->
+                <div class="list-group">
+                    <a class="list-group-item" href="#">
+                    <h4 class="list-group-item-heading">Availability</h4>
+                    <p class="list-group-item-text">As far as possible we try
+                    to always be there for the children in the services that we
+                    offer, in the need for contact and support. Our goal is to
+                    have the program running effectively so all bikes,
+                    equipment, training and races are always accessible to the
+                    children</p></a>
+                </div><!--end of list group"-->
+                <h3>Mission</h3>
+                <p>We are committed to being a proficient sports and
+                entertainment institute in the country by providing facilities
+                of global standards, leading – edge programs and premium
+                instruction through courteous professional staff. We are
+                devoted to making everyone feel refreshed by providing an
+                environment which is always clean, safe, friendly and fun</p>
+            </div><!--end of 2nd co 6--><!--end of 2nd col-6>
+
+
+</div><!==div row for tab section moreInfoS-->
+            <!--=======end of tab section============- ---->
+            <div class="row" id="bigCallout">
+                <div class="col-12">
+                    <div class="well">
+                        <div class="page-header">
+                            <h1>Bangalore Sports Club Membership</h1>
+                        </div><!-- end page-header -->
+                        <p class="lead">Members of the BSC Club avail a wide
+                        range of benefits with world-class services and
+                        facilities. Here, you get a chance to celebrate at the
+                        perfect venues, develop professional and social
+                        relationships and more importantly, have fun! We at the
+                        BSC Club, invite you to be a part of the Bangalore club
+                        culture with one of the best clubs in
+                        Bangalore</p><a class="btn btn-warning" data-toggle=
+                        "modal" href="#myModal" role="button"><span class=
+                        "glyphicon glyphicon-hand-up"></span> Click for Join
+                        Club</a> <a class="btn btn-large btn-link" href=""></a>
+                    </div><!-- end well -->
+                </div><!-- end col-12 -->
+                <!--=============Model window start here==================-->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss=
+                                "modal">&times;</button>
+                                <h4 class="modal-title">Membership</h4>
+                            </div><!-- end modal-header -->
+                            <div class="modal-body">
+                                <h4>Individual Membership</h4>
+                                <p>Avail an extensive range of services that
+                                enrich your lifestyle! These include
+                                world-class sports facilities, F&B services and
+                                ideal venues for all your events in
+                                Bangalore.</p><!--    <h4>Popovers in a modal</h4>
+                <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
+
+                <h4>Tooltips in a modal</h4>
+                <a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+
+                <hr>
+
+                <p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+-->
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label"
+                                        for="inputName">Name</label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control" id=
+                                            "inputName" placeholder="Name"
+                                            type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label"
+                                        for="inputEmail">Email</label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control" id=
+                                            "inputEmail" placeholder="Email"
+                                            type="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label"
+                                        for="inputPhone">Mobile</label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control" id=
+                                            "inputPhone" placeholder="PhoneNo"
+                                            type="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label"
+                                        for="inputMessage">Message</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" id=
+                                            "inputMessage" placeholder=
+                                            "Message" rows="3"></textarea>
+                                            <button aria-hidden="true" class=
+                                            "btn btn-primary btn-lg"
+                                            data-dismiss="modal" data-target=
+                                            "#JoinSuccess" data-toggle="modal"
+                                            type="button">Join!</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!-- end modal-body -->
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Close</button>
+                                <button class="btn btn-primary" type=
+                                "button">Save changes</button>
+                            </div><!-- end modal-footer -->
+                        </div><!-- end modal-content -->
+                    </div><!-- end modal-dialog -->
+                </div><!-- end myModal -->
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div aria-labelledby="myModalLabel" class="modal fade" id=
+                "JoinSuccess" role="dialog" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close"
+                                data-dismiss="modal" type=
+                                "button"><span aria-hidden=
+                                "true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">BSC
+                                Membership</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3>You have Join successfully!</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button aria-hidden="true" class=
+                                "btn btn-default" data-dismiss="modal" type=
+                                "button">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--========Success pop up Model======-->
+                <!--
+<div class="modal fade" id="joinSuccess"  >
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">BSC Club</h4>
+        </div>
+        <div class="modal-body">
+          <p>Join successfully!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!===========end of success popup model=======-->
+
+                <!--=====================end of model Window======================-->
+            </div><!-- end bigCallout -->
+        </div><!--end of main container-->
+        <!---Footer Start here=======-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h6>Copyright &copy; 2016</h6>
+                    </div><!-- end col-sm-2 -->
+                    <div class="col-sm-4">
+                        <h6>About Us</h6>
+                        <p>The BSC Club boasts of premium facilities and
+                        services in the prime area of Malleswaram, in North
+                        Bangalore. With excellent facilities, a range of
+                        entertainment options, ample parking space and party
+                        areas, Galaxy Club is a much sought-after destination
+                        in the city and a prestigious club to be a member of.
+                        The Club is located within the Brigade Gateway campus.
+                        It opened its doors to the public in 2010 and has since
+                        been operating successfully under the professional
+                        management of Brigade Hospitality.</p>
+                    </div><!-- end col-sm-4 -->
+                    <div class="col-sm-2">
+                        <h6>Navigation</h6>
+                        <ul class="unstyled">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Job</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">ContactUS</a>
+                            </li>
+                            <li>
+                                <a href="#">AboutUS</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col-sm-2 -->
+                    <div class="col-sm-2">
+                        <h6>Follow Us</h6>
+                        <ul class="unstyled">
+                            <li>
+                                <a href="#"><img src=
+                                "images/twit.jpg">&nbsp;Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src=
+                                "images/fb.jpg">&nbsp;Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src=
+                                "images/in.jpg">&nbsp;LinkdIN</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src=
+                                "images/insta.jpg">&nbsp;Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src=
+                                "images/yt.jpg">&nbsp;YouTube</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col-sm-2 -->
+                    <div class="col-sm-2">
+                        <h6>Contact US</h6>
+                        <ul class="unstyled">
+
+                          <li><a href="#">Telephone Enquiry</a></li>
+                            <li><a href="#">+61 555 555 1234</a></li><hr>
+                          <li><a href="#">Facsimile</a></li>
+                          <li><a href="#">+61 555 555 1234</a></li><hr>
+                          <li><a href="#">info@BSC.com</a></li>
+                        </ul>
+
+                    </div><!-- end col-sm-2 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer><!--=====end of Footer=======-->
+        <!--All javaScript at the bottom of page for better page loading-->
+        <!--First try for online version of jQuery-->
+        <script src="http://code.jquery.com/jquery.js">
+        </script> <!--if no online access , fallback to our offline version-->
+
+        <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"<\/script>')
+        </script> <!--Bootstrap js-->
+
+        <script src="bootstrap/js/bootstrap.min.js">
+        </script> <!--custome Js-->
+
+        <script src="includes/js/scripts.js">
+        </script>
+    </div>
+</body>
+</html>
